@@ -1,7 +1,7 @@
 from GAN.utils import *
 
 NOISE_DIM = 96
-IMG_DIM = 32
+IMG_DIM = 28
 IMG_CHAN = 1
 
 def get_discriminator():
