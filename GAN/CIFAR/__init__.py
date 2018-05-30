@@ -58,7 +58,7 @@ def train(D, G, D_optim, G_optim, D_loss_fn, G_loss_fn, dtype, loader, show_ever
                     show_images(gen_sample)
                 else:
                     show_images(gen_sample, True,
-                                "cifar_gen/iter{}D{:4}G{:4}".
+                                "cifar_gen/iter{}D{:.4}G{:.4}".
                                 format(iter_count, D_loss.item(), G_loss.item()))
                 plt.show()
                 print()
