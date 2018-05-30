@@ -1,5 +1,12 @@
 # CSE 455 Computer Vision Final Project
 
+## Demo
+
+| Vanilla GAN | Deep Convolutional GAN |
+| ----------- | ---------------------- |
+| ![vg](assets/Vanilla.gif) | ![dc](assets/DCGAN.gif) |
+
+
 ## References
 
 * I. Goodfellow, J. Pouget-Abdie, M.Mirza, B. Xu, D. Warde-Farley, S.Ozair, A. Courville, and Y. Bengio,
