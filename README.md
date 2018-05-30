@@ -22,7 +22,7 @@ both model is taken from __InfoGAN__ (Chen et al.). CIFAR's model is similar to 
 
 ### Usage
 
-First run `$ jupyter notebook` and copy over the following setup code:
+To reproduce our results, first run `$ jupyter notebook` and copy over the following setup code:
 
 ___Note:___ if you run on a CPU please change the `dtype` to `torch.FloatTensor` (uncomment the last line). However,
 beware that our model includes deep convolutional networks that would run extremely slow on CPU.
