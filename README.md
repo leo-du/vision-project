@@ -1,6 +1,8 @@
 # CSE 455 Computer Vision Final Project
 
-## Demo
+## Generative Adversarial Models
+
+### Demo
 
 | Vanilla GAN on MNIST | Deep Convolutional GAN on MNIST |
 | -------------------- | ------------------------------- |
@@ -11,7 +13,14 @@
 | -------------------- | ------------------------------- |
 | ![vg](assets/cifar_vanilla.gif) |    ![dc](assets/cifar_dcgan.gif) |
 
-## Usage
+### Model
+
+Our Vanilla GAN are just Multi-Layer Perceptrons (linear transformations followed by ReLU nonlinearities).
+CIFAR's Vanilla model has more layers than MNIST; and Generator has more layers than Discriminators. For DCGAN,
+Generator and Discriminator in both MNIST and CIFAR have deep convolutional structures. The parameters for MNIST's
+both model is taken from __InfoGAN__ (Chen et al.). CIFAR's model is similar to MNIST's only deeper.
+
+### Usage
 
 First run `$ jupyter notebook` and copy over the following setup code:
 
