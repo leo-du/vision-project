@@ -52,7 +52,7 @@ def train(D, G, D_optim, G_optim, D_loss_fn, G_loss_fn, dtype, loader, show_ever
             G_optim.step()
 
             if (iter_count % show_every == 0):
-                print('Epoch: {}, Iter: {}, D: {:4}, G: {:.4}'.format(epoch, iter_count, D_loss.item(), G_loss.item()))
+                print('Epoch: {}, Iter: {}, D: {:.4}, G: {:.4}'.format(epoch, iter_count, D_loss.item(), G_loss.item()))
                 gen_sample = G_z.data[:16].cpu().numpy() / 2.0 + 0.5
                 if not save:
                     show_images(gen_sample)

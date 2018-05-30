@@ -52,7 +52,7 @@ def train(D, G, D_optim, G_optim, D_loss_fn, G_loss_fn, dtype, loader, show_ever
             G_optim.step()
 
             if iter_count % show_every == 0:
-                print('Epoch: {}, Iter: {}, D loss: {:4}, G loss: {:.4}'
+                print('Epoch: {}, Iter: {}, D loss: {:.4}, G loss: {:.4}'
                       .format(epoch, iter_count, D_loss.item(), G_loss.item()))
                 if not save:
                     show_images(G_z.data[:16].cpu().numpy())
