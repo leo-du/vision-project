@@ -5,7 +5,7 @@ import matplotlib.gridspec as gridspec
 from GAN.utils import sample_noise
 
 
-def show_images(images, save=True, save_path=None):
+def show_images(images, save=False, save_path=None):
     images = np.reshape(images, [images.shape[0], -1])  # images reshape to (batch_size, D)
     sqrtn = int(np.ceil(np.sqrt(images.shape[0])))
 

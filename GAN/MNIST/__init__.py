@@ -5,7 +5,7 @@ import matplotlib.gridspec as gridspec
 from GAN.utils import sample_noise
 
 
-def show_images(images, save=True, save_path=None):
+def show_images(images, save=False, save_path=None):
     images = np.reshape(images, [images.shape[0], -1])
     sqrtn = int(np.ceil(np.sqrt(images.shape[0])))
     sqrtimg = int(np.ceil(np.sqrt(images.shape[1])))
@@ -16,7 +16,7 @@ def show_images(images, save=True, save_path=None):
 
     for i, img in enumerate(images):
         ax = plt.subplot(gs[i])
-        plt.axes('off')
+        plt.axis('off')
         ax.set_xticklabels([])
         ax.set_yticklabels([])
         ax.set_aspect('equal')
