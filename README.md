@@ -2,10 +2,14 @@
 
 ## Demo
 
-| Vanilla GAN | Deep Convolutional GAN |
-| ----------- | ---------------------- |
-| ![vg](assets/Vanilla.gif) | ![dc](assets/DCGAN.gif) |
+| Vanilla GAN on MNIST | Deep Convolutional GAN on MNIST |
+| -------------------- | ------------------------------- |
+| ![vg](assets/Vanilla.gif) |    ![dc](assets/DCGAN.gif) |
 
+
+| Vanilla GAN on CIFAR | Deep Convolutional GAN on CIFAR |
+| -------------------- | ------------------------------- |
+| ![vg](assets/cifar_vanilla.gif) |    ![dc](assets/cifar_dcgan.gif) |
 
 ## References
 
