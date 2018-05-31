@@ -1,6 +1,8 @@
+import torch
 from torch.utils.data import DataLoader, sampler
 import torchvision.transforms as T
 import torchvision.datasets as dset
+import numpy as np
 
 NUM_TRAIN = 50000
 NUM_VAL = 5000
@@ -29,3 +31,12 @@ def get_data():
     cifar_loader = DataLoader(cifar_train, batch_size=batch_size)
 
     return mnist_loader, cifar_loader
+
+
+def get_cifar_category_loader(category: int):
+    cifar_train = dset.CIFAR10('./datasets/CIFAR10_data', train=True,
+                               download=True, transform=T.ToTensor())
+    category_indices = torch.tensor(np.where(np.array(cifar_train.train_labels) == category)).squeeze()
+    category_images = torch.utils.data.dataset.Subset(cifar_train, category_indices)
+    category_loader = DataLoader(category_images, batch_size=batch_size)
+    return category_loader
